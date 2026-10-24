@@ -1,0 +1,34 @@
+body.nacht-view{background:#080c1c;color:#efeff4}
+.nacht-view .site-header{background:transparent;color:#efeff4}
+.nacht-view .scanlines{display:none}
+.nacht-view>footer{background:#080c1c;color:#9da2b7;border-color:#20273c}
+.nacht-page{background:#080c1c;color:#efeff4;--nacht-photo:1;--nacht-light:1;--nacht-title:1}
+.nacht-journey{height:250vh;position:relative}
+.nacht-stage{height:100vh;height:100svh;position:sticky;top:0;overflow:hidden;background:#080c1c;isolation:isolate}
+.nacht-image,.nacht-reflections{position:absolute;inset:0;background-image:url('assets/nachtorchidee/hero.png');background-size:cover;background-position:58% center;pointer-events:none}
+.nacht-image{opacity:var(--nacht-photo);will-change:opacity}
+.nacht-reflections{opacity:var(--nacht-light);will-change:opacity;mask-image:radial-gradient(ellipse 11% 17% at 17% 27%,#000 0%,transparent 100%),radial-gradient(ellipse 16% 10% at 78% 90%,#000 0%,transparent 100%),radial-gradient(ellipse 11% 12% at 91% 67%,#000 0%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 11% 17% at 17% 27%,#000 0%,transparent 100%),radial-gradient(ellipse 16% 10% at 78% 90%,#000 0%,transparent 100%),radial-gradient(ellipse 11% 12% at 91% 67%,#000 0%,transparent 100%)}
+.nacht-stage::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(8,12,28,.83),rgba(8,12,28,.32) 31%,transparent 62%),linear-gradient(0deg,#080c1c,rgba(8,12,28,.25) 22%,transparent 45%),linear-gradient(180deg,rgba(8,12,28,.4),transparent 22%)}
+.nacht-heading{position:absolute;z-index:1;left:6vw;top:43%;max-width:60vw;opacity:var(--nacht-title);margin:0}
+.nacht-heading h1{font:400 clamp(40px,6.1vw,94px)/1.04 Terminal,Arial,sans-serif;letter-spacing:-.025em;margin:0 0 22px}
+.nacht-heading p{font-size:10px;letter-spacing:.13em;line-height:1.8;margin:0;color:#c1c4d4}
+.nacht-back{position:absolute;z-index:2;top:126px;left:6vw;font-size:32px;text-decoration:none;color:inherit;padding:8px 0}
+.nacht-documentation{padding:0 6vw 15vh;max-width:1440px;margin:auto}
+.nacht-documentation h2{font:400 18px/1.3 Terminal,Arial,sans-serif;letter-spacing:.06em;margin:0 0 28px}
+.nacht-documentation p{color:#8c94ab;font-size:11px;letter-spacing:.1em;line-height:1.8}
+.nacht-gallery{display:grid;gap:10vw}
+.nacht-gallery figure{margin:0}.nacht-gallery img{width:100%;height:auto;display:block}
+.nacht-ambient{position:fixed;inset:0;z-index:2;pointer-events:none;overflow:hidden;mix-blend-mode:screen}
+.nacht-ambient span{position:absolute;width:clamp(180px,28vw,440px);aspect-ratio:1;background-image:url('assets/nachtorchidee/reflections-source.png');background-size:200% auto;background-position:60% 24%;mask-image:radial-gradient(ellipse at center,#000 12%,transparent 68%);-webkit-mask-image:radial-gradient(ellipse at center,#000 12%,transparent 68%)}
+.nacht-ambient .nacht-glow-a{left:-7%;top:22%;opacity:.22}
+.nacht-ambient .nacht-glow-b{right:-5%;top:55%;background-position:90% 88%;opacity:.25}
+.nacht-ambient .nacht-glow-c{left:35%;bottom:-13%;background-position:10% 62%;opacity:.18}
+.nacht-ambient .nacht-pointer-glow{left:0;top:0;width:clamp(220px,30vw,420px);opacity:0;transform:translate(calc(var(--light-x,50vw) - 50%),calc(var(--light-y,50vh) - 50%));transition:opacity 1.4s ease;background-position:60% 24%;will-change:transform}
+.nacht-ambient span{filter:brightness(1.8) saturate(1.35)}
+.nacht-ambient.is-pointing .nacht-pointer-glow{opacity:.8}
+.nacht-documentation{position:relative;z-index:3}
+.nacht-view>footer{position:relative;z-index:3;background:transparent}
+@media(hover:none),(pointer:coarse){.nacht-pointer-glow{display:none}}
+@media(prefers-reduced-motion:reduce){.nacht-pointer-glow{display:none}}
+@media(max-width:650px){.nacht-image,.nacht-reflections{background-position:62% center}.nacht-heading{top:26%;max-width:90vw}.nacht-heading h1{font-size:clamp(34px,9.6vw,58px)}.nacht-heading p{font-size:8px}.nacht-back{top:92px}.nacht-stage::after{background:linear-gradient(90deg,rgba(8,12,28,.55),transparent 80%),linear-gradient(0deg,#080c1c,transparent 40%),linear-gradient(180deg,rgba(8,12,28,.5),transparent 48%)}.nacht-journey{height:220vh}}
+@media(prefers-reduced-motion:reduce){.nacht-journey{height:auto}.nacht-stage{position:relative}.nacht-image{opacity:1}.nacht-reflections{display:none}.nacht-heading{opacity:1}.nacht-documentation{padding-top:15vh}}

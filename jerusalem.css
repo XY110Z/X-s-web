@@ -1,0 +1,57 @@
+/* All rules are scoped to this project; existing project pages retain their styles. */
+body.jerusalem-view{background:#080808;color:#eeeeea}
+.jerusalem-view .site-header{background:#080808;color:#eeeeea}
+.jerusalem-view .scanlines{display:none}
+.jerusalem-view>footer{background:#080808;color:#a5a5a0;border-color:#282828}
+.jerusalem-view>footer a{color:inherit}
+.jerusalem-page{background:#080808;color:#eeeeea;padding-top:110px;overflow:clip;--jerusalem-gutter:6vw}
+.jerusalem-back{padding:20px var(--jerusalem-gutter) 36px}
+.jerusalem-back a{display:inline-flex;padding:8px 0}
+.jerusalem-ultrawide{aspect-ratio:16/3;width:100%;background:#111;position:relative;display:grid;place-items:center}
+.jerusalem-ultrawide video{width:100%;height:100%;object-fit:contain;position:absolute;inset:0}
+.jerusalem-placeholder{margin:0;text-align:center;font-size:11px;line-height:1.8;letter-spacing:.1em;color:#b5b5af}
+.jerusalem-placeholder span{display:block;font-size:9px;color:#858580;letter-spacing:.14em}
+.jerusalem-heading{padding:42px var(--jerusalem-gutter) 0;display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.jerusalem-heading h1{font:400 clamp(28px,3.2vw,48px)/1.05 Terminal,Arial,sans-serif;letter-spacing:-.025em;margin:0;max-width:75%}
+.jerusalem-heading>p{margin:3px 0 0;font-size:10px;line-height:1.7;letter-spacing:.08em;text-transform:uppercase;max-width:230px}
+.jerusalem-heading>p span{display:block}
+.jerusalem-photography{display:grid;grid-template-columns:25fr 38fr 25fr;column-gap:6%;align-items:start;margin:clamp(100px,14vw,210px) 4vw clamp(70px,8vw,110px)}
+.jerusalem-photo{margin:0;min-width:0}
+.jerusalem-photo--center{margin-top:9vw}
+.jerusalem-photo--right{margin-top:20vw}
+.jerusalem-photo-media{position:relative;background:#111}
+.jerusalem-photo-media img{display:block;width:100%;height:auto}
+.jerusalem-photo-media:has(img[hidden]){aspect-ratio:4/3;display:grid;place-items:center}
+.jerusalem-photo--center .jerusalem-photo-media:has(img[hidden]){aspect-ratio:2736/1528}
+.jerusalem-photo figcaption{font-size:10px;line-height:1.65;letter-spacing:.08em;padding-top:16px}
+.jerusalem-photo figcaption span{display:block;font-size:9px;color:#8f8f89;letter-spacing:.1em}
+.jerusalem-photo figcaption .jerusalem-photo-credit{margin-top:8px;letter-spacing:.025em}
+.jerusalem-photography.is-animated .jerusalem-photo{opacity:var(--photo-opacity,0);transform:translateY(var(--photo-offset,80px))}
+.jerusalem-performance{margin:0 var(--jerusalem-gutter) clamp(100px,12vw,180px)}
+.jerusalem-performances{margin:0 var(--jerusalem-gutter) clamp(64px,7vw,100px);padding-top:28px;border-top:1px solid #303030}
+.jerusalem-performance h2{font:400 18px/1.2 Terminal,Arial,sans-serif;letter-spacing:.025em;margin:0 0 24px}
+.jerusalem-video{aspect-ratio:16/9;background:#111;display:grid;place-items:center;position:relative;width:100%}
+.jerusalem-video iframe{border:0;width:100%;height:100%;position:absolute;inset:0}
+.jerusalem-information{margin:0 var(--jerusalem-gutter);padding:38px 0 clamp(85px,10vw,150px);border-top:1px solid #303030}
+.jerusalem-description{margin-top:0;max-width:76ch;font-size:14px;line-height:1.8}
+.jerusalem-description p{margin:0 0 1.4em}
+.jerusalem-description p:last-child{margin-bottom:0}
+.jerusalem-description.is-placeholder{font-size:10px;letter-spacing:.08em;color:#858580}
+.jerusalem-information dl{margin:0;font-size:13px;line-height:1.65}
+.jerusalem-information dl>div{display:grid;grid-template-columns:75px 1fr;gap:22px;margin-bottom:12px}
+.jerusalem-information dt{color:#8f8f89}
+.jerusalem-information dd{margin:0}
+@media(max-width:650px){
+ .jerusalem-page{padding-top:90px;--jerusalem-gutter:6vw}
+ .jerusalem-back{padding-top:12px;padding-bottom:24px}
+ .jerusalem-placeholder{font-size:9px}.jerusalem-placeholder span{font-size:8px}
+ .jerusalem-heading{display:block;padding-top:28px}
+ .jerusalem-heading h1{max-width:100%;font-size:clamp(27px,7.8vw,42px)}
+ .jerusalem-heading>p{margin-top:20px;font-size:9px}
+ .jerusalem-photography{display:flex;flex-direction:column;gap:65px;margin:80px var(--jerusalem-gutter) 100px}
+ .jerusalem-photo{width:100%;margin:0}
+ .jerusalem-photo figcaption{padding-top:12px}
+ .jerusalem-description{margin-top:0}
+ .jerusalem-information dl{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.jerusalem-photography.is-animated .jerusalem-photo{opacity:1;transform:none}}
