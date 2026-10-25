@@ -260,7 +260,7 @@ body{background:var(--background);color:var(--ink);transition:background-color .
 .accent{color:#5b43ff}
 .activities{display:grid;grid-template-columns:.7fr 1.7fr;gap:8%;margin:0;padding:72px 4% 85px;border:0;background:#2424a8;color:#f7f7f3}
 .section-top h2{font-size:clamp(44px,6vw,88px)}
-.event-board{display:grid;grid-template-columns:.72fr 1.35fr;gap:18px}
+.event-board{display:grid;grid-template-columns:1fr;gap:18px}
 .event-column{min-height:285px;padding:22px;color:#111210}
 .upcoming-events{background:#dfff63;display:flex;flex-direction:column;justify-content:space-between}
 .upcoming-copy{display:flex;flex-direction:column;gap:18px;margin-top:30px}
