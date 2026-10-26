@@ -75,6 +75,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .about-copy p{font-size:clamp(18px,2vw,27px);line-height:1.45;letter-spacing:-.02em;margin:0 0 25px}
 .about-portrait{width:min(100%,245px);margin:34px 0 0;overflow:hidden;background:#e8ebe9}
 .about-portrait img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:44% center;filter:saturate(.72) contrast(.94)}
+.about-portrait figcaption{padding:8px 10px;background:#e8ebe9;color:#333;font-size:11px;letter-spacing:.04em;text-align:right}
 .contact{margin:0 4%;padding:35px 0 25px;border-top:1px solid var(--line)}
 .contact-meta{display:flex;justify-content:space-between;gap:25px;line-height:1.5}
 .contact-caption{max-width:380px;text-align:right;white-space:pre-line}
