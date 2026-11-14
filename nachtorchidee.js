@@ -1,5 +1,12 @@
 (() => {
   const page = document.getElementById('nachtorchidee');
+  const film = page.querySelector('.nacht-video iframe');
+  function syncFilm() {
+    if (page.hidden) film.removeAttribute('src');
+    else if (!film.getAttribute('src')) film.src = film.dataset.src;
+  }
+  new MutationObserver(syncFilm).observe(page, {attributes:true, attributeFilter:['hidden']});
+  syncFilm();
   const journey = page.querySelector('.nacht-journey');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   // Independent transparent CSS masks sample the user's photograph, preserving its real colors.
