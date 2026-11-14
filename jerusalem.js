@@ -9,7 +9,7 @@
     sound: 'Haoran Wang',
     description: "Ein Traum von Jerusalem explores the desire to remain in a dream and the inevitability of waking up.\n\nThrough live vocal processing, sound, dynamic light, and projected architecture, an imagined Jerusalem takes shape as a place of memory and longing. Architectural forms emerge, dissolve, and reappear, creating a world that feels almost tangible but never quite within reach.\n\nRepeated calls to awaken interrupt the dream, drawing the performance into a struggle between the comfort of an idealized world and the reality of having to leave it behind.",
     visualVideo: 'assets/jerusalem/visual-loop.mov', // Local 5760 × 1080 loop.
-    youtubeUrl: '', // A real youtube.com/watch or youtu.be URL. Never autoplays.
+    youtubeUrl: 'https://youtu.be/njBh38roZPc', // Full performance. Never autoplays.
     photographs: {
       left: 'assets/jerusalem/visuals.jpg',
       center: 'assets/jerusalem/performance.jpg',
